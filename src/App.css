@@ -1,0 +1,136 @@
+.App{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/images/fondo1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  /* se adapta para que ocupe toda la caja*/
+    
+}
+
+
+.card{
+    width: 100%;
+    max-width: 400px;
+    background-color:#bdbcdf85;
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.card__header,
+.card__footer{
+    grid-column: span 2;
+
+}
+
+.card__tittle{
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.card__subtittle{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+
+.card__temp{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.card__info{
+   padding-top: 20px;
+}
+
+.card__description{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.card__list{
+    display: grid;
+    gap: 8px;
+}
+
+.card__item{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.card__footer{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.card__btn{
+    padding: 0.5em 1em;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4b48a2e4;
+    color: white;
+    box-shadow: 1px 1px 10px rgba(23, 21, 87, 0.7);
+    transition: transform 100ms ease;
+
+}
+
+.card__btn:hover{
+    transform: scale(1.05);
+    
+}
+
+.card__btn:active{
+    transform: scale(1.02);
+    box-shadow: none;
+}
+
+
+
+.loader__container {
+    height: calc(90vh - 80px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loader__div {
+    width: 10em;
+    height: 10em;
+    background-image: url('/public/images/6214077.png');
+    border: 10px solid #4b79ca9a;
+    /* border-top: 10px solid rgba(4, 4, 30, 0.884); */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    animation: rotation 1.7s 0.2s infinite cubic-bezier(0.34, 0.66, 1, 0.59);
+  }
+
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
